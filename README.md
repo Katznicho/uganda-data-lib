@@ -61,3 +61,36 @@ To make API requests, include your API key in the HTTP headers of your requests.
 
 
 
+## Description
+
+The Uganda Data Library is a JavaScript library that provides an interface to the Uganda Rapharm API, allowing users to retrieve information about districts, counties, sub-counties, parishes, and villages.
+
+## Installation
+
+To install the library, use npm:
+
+```bash
+npm install uganda-data-lib
+
+```
+
+## Usage
+const UgandaData = require('uganda-data-lib');
+
+ugandaDataLib.fetchDistricts()
+  .then(data => console.log(data))
+  .catch(error => console.error(error.message));
+  
+
+| Method                               | Description                                              | Parameters                                      | Return Type       |
+| ------------------------------------ | -------------------------------------------------------- | ----------------------------------------------- | ----------------- |
+| `constructor(apiKey)`                | Initializes an instance of the class.                    | `apiKey` (string)                              | -                 |
+| `setApiKey(apiKey)`                  | Sets the API key and headers for the request.            | `apiKey` (string)                              | -                 |
+| `async fetchData(url)`               | Fetches data from the specified URL.                     | `url` (string)                                 | `Promise<any>`    |
+| `async fetchDistricts(limit, page, sort_order)` | Fetches the districts with specified limit, page, and sort order. | `limit` (number, default: 100), `page` (number, default: 1), `sort_order` (string, default: "asc") | `Promise<any>`    |
+| `async fetchDistrict(uuid)`          | Fetches a district from the API based on the given UUID. | `uuid` (string)                                | `Promise<any>`    |
+| `async fetchDistrictCounty(uuid)`    | Fetches a county from the API based on the given UUID of a district. | `uuid` (string)                                | `Promise<any>`    |
+| `async fetchDistrictSubcounty(uuid)` | Fetches a sub-county from the API based on the given UUID of a district. | `uuid` (string)                                | `Promise<any>`    |
+| `async fetchDistrictParish(uuid)`    | Fetches a parish from the API based on the given UUID of a district. | `uuid` (string)                                | `Promise<any>`    |
+| `async fetchDistrictVillage(uuid)`   | Fetches a village from the API based on the given UUID of a district. | `uuid` (string)                                | `Promise<any>`    |
+
