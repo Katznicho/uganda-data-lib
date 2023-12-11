@@ -1,1 +1,0 @@
-const BASEURL  = "https://uganda.rapharm.shop/api/uganda/data/v1"

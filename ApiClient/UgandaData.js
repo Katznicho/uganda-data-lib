@@ -68,6 +68,57 @@ class UgandaData {
         const url = `${this.baseurl}/district/${uuid}`;
         return this.fetchData(url);
     }
+    
+
+    /**
+     * Fetches a county from the API based on the given UUID of a district.
+     *
+     * @param {string} uuid - The UUID of the county to fetch.
+     * @return {Promise} A Promise that resolves with the fetched county data.
+     */
+    async fetchDistrictCounty(uuid) {
+        const url = `${this.baseurl}/county/${uuid}`;
+        return this.fetchData(url);
+    }
+
+    ///district/{uuid}/subcounties
+
+    /**
+     * Fetches a sub-county from the API based on the given UUID of a district.
+     *
+     * @param {string} uuid - The UUID of the sub-county to fetch.
+     * @return {Promise} A Promise that resolves with the fetched sub-county data.
+     */
+    async fetchDistrictSubcounty(uuid) {
+        const url = `${this.baseurl}/subcounty/${uuid}`;
+        return this.fetchData(url);
+    }
+
+    ///district/{uuid}/parishes
+
+    /**
+     * Fetches a parish from the API based on the given UUID of a district.
+     *
+     * @param {string} uuid - The UUID of the parish to fetch.
+     * @return {Promise} A Promise that resolves with the fetched parish data.
+     */
+    async fetchDistrictParish(uuid) {
+        const url = `${this.baseurl}/parish/${uuid}`;
+        return this.fetchData(url);
+    }
+
+    ///district/{uuid}/villages
+
+    /**
+     * Fetches a village from the API based on the given UUID of a district.
+     *
+     * @param {string} uuid - The UUID of the village to fetch.
+     * @return {Promise} A Promise that resolves with the fetched village data.
+     */
+    async fetchDistrictVillage(uuid) {
+        const url = `${this.baseurl}/village/${uuid}`;
+        return this.fetchData(url);
+    }
 }
 
 module.exports = UgandaData;
