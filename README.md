@@ -173,13 +173,14 @@ Thank you for considering contributing to UGANDA DATA LIB! Contributions are wel
 1. Fork the repository on GitHub.
 2. Clone your forked repository to your local machine.
 
-   ```bash
+```bash
    git clone https://github.com/your-username/uganda-data-lib.git
    cd uganda-data-lib
    git checkout -b feature-name
    git commit -m "Your descriptive commit message"
    git push origin feature-name
 ```
+
 
 # Support Me
 
