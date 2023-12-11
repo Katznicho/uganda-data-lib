@@ -104,6 +104,7 @@ npm install uganda-data-lib
 ## Usage 
 ```js
 const UgandaData = require('uganda-data-lib');
+const ugandaDataLib = new UgandaData("Your_api_key");
 
 ugandaDataLib.fetchDistricts()
   .then(data => console.log(data))
