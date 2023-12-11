@@ -16,6 +16,12 @@
         - [This table explains how to get data about sub-counties](#this-table-explains-how-to-get-data-about-sub-counties)
         - [This table explains how to get data about parishes](#this-table-explains-how-to-get-data-about-parishes)
         - [This table explains how to get data about villages](#this-table-explains-how-to-get-data-about-villages)
+2. [Support Me](#support-me)
+    - [Financial Contributions](#financial-contributions)
+    - [Mobile Money Contributions](#mobile-money-contributions)
+    - [Visit My Website](#visit-my-website)
+    - [Hire Me](#hire-me)        
+        
 
 
 # UGANDA DATA LIB
@@ -119,7 +125,7 @@ ugandaDataLib.fetchDistricts()
 | `async fetchDistrictVillage(uuid)`   | Fetches a village from the Library based on the given UUID of a district. | `uuid` (string)                                | `Promise<any>`    |
 
 
-**This table explains how to get data about  counties**
+**This table explains how to get data about counties**
 
 | Method                                  | Description                                                | Parameters                                          | Return Type       |
 | --------------------------------------- | ---------------------------------------------------------- | --------------------------------------------------- | ----------------- |
@@ -129,7 +135,7 @@ ugandaDataLib.fetchDistricts()
 | `async fetchCountyVillage(uuid)`         | Fetches a village from the API based on the given UUID of a county. | `uuid` (string)                                    | `Promise<any>`    |
 
 
-**This table explains how to get data aboutsub counties**
+**This table explains how to get data about counties**
 
 | Method                                   | Description                                                | Parameters                                          | Return Type       |
 | ---------------------------------------- | ---------------------------------------------------------- | --------------------------------------------------- | ----------------- |
@@ -138,7 +144,7 @@ ugandaDataLib.fetchDistricts()
 | `async fetchSubcountyVillage(uuid)`      | Fetches a village from the API based on the given UUID of a sub-county. | `uuid` (string)                                    | `Promise<any>`    |
 
 
-**This table explains how to get data aboutsub parishes**
+**This table explains how to get data about parishes**
 
 | Method                                   | Description                                                | Parameters                                          | Return Type       |
 | ---------------------------------------- | ---------------------------------------------------------- | --------------------------------------------------- | ----------------- |
@@ -149,9 +155,39 @@ ugandaDataLib.fetchDistricts()
 
 
 
-**This table explains how to get data aboutsub villages**
+**This table explains how to get data about villages**
 
 | Method                              | Description                                              | Parameters                                          | Return Type       |
 | ----------------------------------- | -------------------------------------------------------- | --------------------------------------------------- | ----------------- |
 | `async fetchVillages(limit, page, sort_order)` | Fetches all the villages from the API.                 | `limit` (number, default: 100), `page` (number, default: 1), `sort_order` (string, default: "asc") | `Promise<any>`    |
 | `async fetchVillage(uuid)`           | Fetches a village from the API based on the given UUID.  | `uuid` (string)                                    | `Promise<any>`    |
+
+
+# Support Me
+
+If you find this project helpful and would like to support its development, you have a few options:
+
+## Financial Contributions
+
+- [Buy Me a Coffee](https://www.buymeacoffee.com/katznichov)
+
+Your financial support helps keep this project actively maintained and improved.
+
+### Mobile Money Contributions
+
+If you prefer to contribute via mobile money, you can use the following numbers:
+
+- MTN Mobile Money: +256 781 230 949
+- Airtel Money: +256 759 983 853
+
+Your support is greatly appreciated!
+
+## Visit My Website
+
+For more about me and my projects, you can visit my [website](https://resume-eta-rose.vercel.app/)
+
+## Hire Me
+
+If you're looking for a developer with expertise in this project, I'm available for hire. Feel free to [contact me](mailto:katznicho@gmail.com) for more information.
+
+Thank you for supporting this project!
