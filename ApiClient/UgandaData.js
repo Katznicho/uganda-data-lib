@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-class UgandData {
+class UgandaData {
     /**
      * Constructor function that initializes an instance of the class.
      *
@@ -70,4 +70,4 @@ class UgandData {
     }
 }
 
-module.exports = UgandData;
+module.exports = UgandaData;
