@@ -1,3 +1,23 @@
+# Table of Contents
+
+1. [UGANDA DATA LIB](#uganda-data-lib)
+    - [Prerequisites](#prerequisites)
+    - [Generating API Key](#generating-api-key)
+    - [Accessing Data Through API](#accessing-data-through-api)
+    - [Authorization](#authorization)
+        - [API Key Authorization](#api-key-authorization)
+        - [Generating API Key](#generating-api-key-1)
+        - [Using API Key](#using-api-key)
+    - [Description](#description)
+    - [Installation](#installation)
+    - [Usage](#usage)
+        - [This table explains how to get data about districts](#this-table-explains-how-to-get-data-about-districts)
+        - [This table explains how to get data about counties](#this-table-explains-how-to-get-data-about-counties)
+        - [This table explains how to get data about sub-counties](#this-table-explains-how-to-get-data-about-sub-counties)
+        - [This table explains how to get data about parishes](#this-table-explains-how-to-get-data-about-parishes)
+        - [This table explains how to get data about villages](#this-table-explains-how-to-get-data-about-villages)
+
+
 # UGANDA DATA LIB
 - Welcome to the Uganda Data Project documentation. This guide will help you get started with accessing data related to districts, counties, sub-counties, parishes, and villages in Uganda through the Uganda Data Project API.
 
@@ -18,9 +38,9 @@ Once you have an account on the Uganda Data Project, follow these steps to gener
 
 ## Accessing Data Through API
 
-Now that you have an API key, you can access data through the Uganda Data Project API:
+Now that you have an API key, you can access data through the Uganda Data Project Library:
 
-1. Use the API key in your requests to authenticate and access the Library.
+1. Use the API key in your requests to authenticate methods within  the Library.
 2. Explore the available datasets related to districts, counties, sub-counties, parishes, and villages in Uganda.
 3. Follow the Library documentation for details on endpoints, parameters, and response formats.
 
@@ -74,7 +94,7 @@ npm install uganda-data-lib
 
 ```
 
-## Usage
+## Usage 
 ```js
 const UgandaData = require('uganda-data-lib');
 
@@ -83,6 +103,7 @@ ugandaDataLib.fetchDistricts()
   .catch(error => console.error(error.message));
 ```
 
+**This table explains how to get data about  districts**
 
 
 | Method                               | Description                                              | Parameters                                      | Return Type       |
@@ -97,3 +118,40 @@ ugandaDataLib.fetchDistricts()
 | `async fetchDistrictParish(uuid)`    | Fetches a parish from the Library based on the given UUID of a district. | `uuid` (string)                                | `Promise<any>`    |
 | `async fetchDistrictVillage(uuid)`   | Fetches a village from the Library based on the given UUID of a district. | `uuid` (string)                                | `Promise<any>`    |
 
+
+**This table explains how to get data about  counties**
+
+| Method                                  | Description                                                | Parameters                                          | Return Type       |
+| --------------------------------------- | ---------------------------------------------------------- | --------------------------------------------------- | ----------------- |
+| `async fetchCounties(limit, page, sort_order)` | Fetches all the counties from the API.                     | `limit` (number, default: 100), `page` (number, default: 1), `sort_order` (string, default: "asc") | `Promise<any>`    |
+| `async fetchCountySubcounty(uuid)`       | Fetches a sub-county from the API based on the given UUID of a county. | `uuid` (string)                                    | `Promise<any>`    |
+| `async fetchCountyParish(uuid)`          | Fetches a parish from the API based on the given UUID of a county. | `uuid` (string)                                    | `Promise<any>`    |
+| `async fetchCountyVillage(uuid)`         | Fetches a village from the API based on the given UUID of a county. | `uuid` (string)                                    | `Promise<any>`    |
+
+
+**This table explains how to get data aboutsub counties**
+
+| Method                                   | Description                                                | Parameters                                          | Return Type       |
+| ---------------------------------------- | ---------------------------------------------------------- | --------------------------------------------------- | ----------------- |
+| `async fetchSubcounties(limit, page, sort_order)` | Fetches all the sub-counties from the API.               | `limit` (number, default: 100), `page` (number, default: 1), `sort_order` (string, default: "asc") | `Promise<any>`    |
+| `async fetchSubcountyParish(uuid)`       | Fetches a parish from the API based on the given UUID of a sub-county. | `uuid` (string)                                    | `Promise<any>`    |
+| `async fetchSubcountyVillage(uuid)`      | Fetches a village from the API based on the given UUID of a sub-county. | `uuid` (string)                                    | `Promise<any>`    |
+
+
+**This table explains how to get data aboutsub parishes**
+
+| Method                                   | Description                                                | Parameters                                          | Return Type       |
+| ---------------------------------------- | ---------------------------------------------------------- | --------------------------------------------------- | ----------------- |
+| `async fetchParishes(limit, page, sort_order)` | Fetches all the parishes from the API.                   | `limit` (number, default: 100), `page` (number, default: 1), `sort_order` (string, default: "asc") | `Promise<any>`    |
+| `async fetchParish(uuid)`                | Fetches a parish from the API based on the given UUID.    | `uuid` (string)                                    | `Promise<any>`    |
+| `async fetchParishVillage(uuid)`         | Fetches a village from the API based on the given UUID of a parish. | `uuid` (string)                                    | `Promise<any>`    |
+
+
+
+
+**This table explains how to get data aboutsub villages**
+
+| Method                              | Description                                              | Parameters                                          | Return Type       |
+| ----------------------------------- | -------------------------------------------------------- | --------------------------------------------------- | ----------------- |
+| `async fetchVillages(limit, page, sort_order)` | Fetches all the villages from the API.                 | `limit` (number, default: 100), `page` (number, default: 1), `sort_order` (string, default: "asc") | `Promise<any>`    |
+| `async fetchVillage(uuid)`           | Fetches a village from the API based on the given UUID.  | `uuid` (string)                                    | `Promise<any>`    |

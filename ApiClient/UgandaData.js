@@ -119,6 +119,171 @@ class UgandaData {
         const url = `${this.baseurl}/village/${uuid}`;
         return this.fetchData(url);
     }
+
+    ///counties
+
+    /**
+     * Fetches all the counties from the API.
+     *
+     * @param {number} limit - The number of counties to fetch. Default is 100.
+     * @param {number} page - The page number of counties to fetch. Default is 1.
+     * @param {string} sort_order - The sorting order of the counties. Default is "asc".
+     * @return {Promise} A Promise that resolves with the fetched county data.
+     */
+    async fetchCounties(limit = 100, page = 1, sort_order = "asc") {
+        const url = `${this.baseurl}/counties`;
+        return this.fetchData(url);
+    }
+
+   ///county/{uuid}/subcounties
+
+    /**
+     * Fetches a sub-county from the API based on the given UUID of a county.
+     *
+     * @param {string} uuid - The UUID of the sub-county to fetch.
+     * @return {Promise} A Promise that resolves with the fetched sub-county data.
+     */
+    async fetchCountySubcounty(uuid) {
+        const url = `${this.baseurl}/subcounties/${uuid}`;
+        return this.fetchData(url);
+    }
+
+    ///county/{uuid}/parishes
+
+    /**
+     * Fetches a parish from the API based on the given UUID of a county.
+     *
+     * @param {string} uuid - The UUID of the parish to fetch.
+     * @return {Promise} A Promise that resolves with the fetched parish data.
+     */
+    async fetchCountyParish(uuid) {
+        const url = `${this.baseurl}/parishes/${uuid}`;
+        return this.fetchData(url);
+    }
+
+    ///county/{uuid}/villages
+
+    /**
+     * Fetches a village from the API based on the given UUID of a county.
+     *
+     * @param {string} uuid - The UUID of the village to fetch.
+     * @return {Promise} A Promise that resolves with the fetched village data.
+     */
+    async fetchCountyVillage(uuid) {
+        const url = `${this.baseurl}/villages/${uuid}`;
+        return this.fetchData(url);
+    }
+
+    ///subcounties
+
+    /**
+     * Fetches all the sub-counties from the API.
+     *
+     * @param {number} limit - The number of sub-counties to fetch. Default is 100.
+     * @param {number} page - The page number of sub-counties to fetch. Default is 1.
+     * @param {string} sort_order - The sorting order of the sub-counties. Default is "asc".
+     * @return {Promise} A Promise that resolves with the fetched sub-county data.
+     */
+    async fetchSubcounties(limit = 100, page = 1, sort_order = "asc") {
+        const url = `${this.baseurl}/subcounties`;
+        return this.fetchData(url);
+    }
+
+    ///subcounty/{uuid}/parishes
+
+    /**
+     * Fetches a parish from the API based on the given UUID of a sub-county.
+     *
+     * @param {string} uuid - The UUID of the parish to fetch.
+     * @return {Promise} A Promise that resolves with the fetched parish data.
+     */
+    async fetchSubcountyParish(uuid) {
+        const url = `${this.baseurl}/parishes/${uuid}`;
+        return this.fetchData(url);
+    }
+
+    ///subcounty/{uuid}/villages
+
+    /**
+     * Fetches a village from the API based on the given UUID of a sub-county.
+     *
+     * @param {string} uuid - The UUID of the village to fetch.
+     * @return {Promise} A Promise that resolves with the fetched village data.
+     */
+    async fetchSubcountyVillage(uuid) {
+        const url = `${this.baseurl}/villages/${uuid}`;
+        return this.fetchData(url);
+    }
+
+    ///parishes
+
+    /**
+     * Fetches all the parishes from the API.
+     *
+     * @param {number} limit - The number of parishes to fetch. Default is 100.
+     * @param {number} page - The page number of parishes to fetch. Default is 1.
+     * @param {string} sort_order - The sorting order of the parishes. Default is "asc".
+     * @return {Promise} A Promise that resolves with the fetched parish data.
+     */
+    async fetchParishes(limit = 100, page = 1, sort_order = "asc") {
+        const url = `${this.baseurl}/parishes`;
+        return this.fetchData(url);
+    }
+
+    ///parish/{uuid}
+
+    /**
+     * Fetches a parish from the API based on the given UUID.
+     *
+     * @param {string} uuid - The UUID of the parish to fetch.
+     * @return {Promise} A Promise that resolves with the fetched parish data.
+     */
+    async fetchParish(uuid) {
+        const url = `${this.baseurl}/parish/${uuid}`;
+        return this.fetchData(url);
+    }
+
+    ///parish/{uuid}/villages 
+
+    /**
+     * Fetches a village from the API based on the given UUID of a parish.
+     *
+     * @param {string} uuid - The UUID of the village to fetch.
+     * @return {Promise} A Promise that resolves with the fetched village data.
+     */
+    async fetchParishVillage(uuid) {
+        const url = `${this.baseurl}/villages/${uuid}`;
+        return this.fetchData(url);
+    }
+
+    ///villages
+
+    /**
+     * Fetches all the villages from the API.
+     *
+     * @param {number} limit - The number of villages to fetch. Default is 100.
+     * @param {number} page - The page number of villages to fetch. Default is 1.
+     * @param {string} sort_order - The sorting order of the villages. Default is "asc".
+     * @return {Promise} A Promise that resolves with the fetched village data.
+     */
+    async fetchVillages(limit = 100, page = 1, sort_order = "asc") {
+        const url = `${this.baseurl}/villages`;
+        return this.fetchData(url);
+    }
+
+    ///village/{uuid}
+
+    /**
+     * Fetches a village from the API based on the given UUID.
+     *
+     * @param {string} uuid - The UUID of the village to fetch.
+     * @return {Promise} A Promise that resolves with the fetched village data.
+     */
+    async fetchVillage(uuid) {
+        const url = `${this.baseurl}/village/${uuid}`;
+        return this.fetchData(url);
+    }
+
 }
 
 module.exports = UgandaData;
