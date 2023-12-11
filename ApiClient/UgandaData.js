@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-class ApiClient {
+class UgandData {
     /**
      * Constructor function that initializes an instance of the class.
      *
@@ -70,4 +70,4 @@ class ApiClient {
     }
 }
 
-module.exports = ApiClient;
+module.exports = UgandData;
