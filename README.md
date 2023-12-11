@@ -75,22 +75,25 @@ npm install uganda-data-lib
 ```
 
 ## Usage
+```js
 const UgandaData = require('uganda-data-lib');
 
 ugandaDataLib.fetchDistricts()
   .then(data => console.log(data))
   .catch(error => console.error(error.message));
-  
+```
+
+
 
 | Method                               | Description                                              | Parameters                                      | Return Type       |
 | ------------------------------------ | -------------------------------------------------------- | ----------------------------------------------- | ----------------- |
 | `constructor(apiKey)`                | Initializes an instance of the class.                    | `apiKey` (string)                              | -                 |
 | `setApiKey(apiKey)`                  | Sets the API key and headers for the request.            | `apiKey` (string)                              | -                 |
-| `async fetchData(url)`               | Fetches data from the specified URL.                     | `url` (string)                                 | `Promise<any>`    |
+| `async fetchData(url)`               | Fetches data but you dont need to call this method .                     | `url` (string)                                 | `Promise<any>`    |
 | `async fetchDistricts(limit, page, sort_order)` | Fetches the districts with specified limit, page, and sort order. | `limit` (number, default: 100), `page` (number, default: 1), `sort_order` (string, default: "asc") | `Promise<any>`    |
-| `async fetchDistrict(uuid)`          | Fetches a district from the API based on the given UUID. | `uuid` (string)                                | `Promise<any>`    |
-| `async fetchDistrictCounty(uuid)`    | Fetches a county from the API based on the given UUID of a district. | `uuid` (string)                                | `Promise<any>`    |
-| `async fetchDistrictSubcounty(uuid)` | Fetches a sub-county from the API based on the given UUID of a district. | `uuid` (string)                                | `Promise<any>`    |
-| `async fetchDistrictParish(uuid)`    | Fetches a parish from the API based on the given UUID of a district. | `uuid` (string)                                | `Promise<any>`    |
-| `async fetchDistrictVillage(uuid)`   | Fetches a village from the API based on the given UUID of a district. | `uuid` (string)                                | `Promise<any>`    |
+| `async fetchDistrict(uuid)`          | Fetches a district from the Library based on the given UUID. | `uuid` (string)                                | `Promise<any>`    |
+| `async fetchDistrictCounty(uuid)`    | Fetches a county from the Library based on the given UUID of a district. | `uuid` (string)                                | `Promise<any>`    |
+| `async fetchDistrictSubcounty(uuid)` | Fetches a sub-county from the Library based on the given UUID of a district. | `uuid` (string)                                | `Promise<any>`    |
+| `async fetchDistrictParish(uuid)`    | Fetches a parish from the Library based on the given UUID of a district. | `uuid` (string)                                | `Promise<any>`    |
+| `async fetchDistrictVillage(uuid)`   | Fetches a village from the Library based on the given UUID of a district. | `uuid` (string)                                | `Promise<any>`    |
 
