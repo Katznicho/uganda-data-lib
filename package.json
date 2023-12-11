@@ -1,0 +1,30 @@
+{
+  "name": "uganda-data-lib",
+  "version": "1.0.1",
+  "description": "A JavaScript library that Unlocks boundless opportunities for accessing data about districts, counties, sub-counties, parishes, and villages in Uganda.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Katznicho/uganda-data-lib.git"
+  },
+  "keywords": [
+    "uganda",
+    "data",
+    "uganda-districts",
+    "uganda-counties",
+    "uganda-sub-counties",
+    "uganda-villages"
+  ],
+  "author": "katende nicholas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Katznicho/uganda-data-lib/issues"
+  },
+  "homepage": "https://github.com/Katznicho/uganda-data-lib#readme",
+  "dependencies": {
+    "axios": "^1.6.2"
+  }
+}
