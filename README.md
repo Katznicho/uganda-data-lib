@@ -16,6 +16,7 @@
         - [This table explains how to get data about sub-counties](#this-table-explains-how-to-get-data-about-sub-counties)
         - [This table explains how to get data about parishes](#this-table-explains-how-to-get-data-about-parishes)
         - [This table explains how to get data about villages](#this-table-explains-how-to-get-data-about-villages)
+    - [Contributing to UGANDA DATA LIB](#Contributing-to-UGANDA-DATA-LIB)    
 2. [Support Me](#support-me)
     - [Financial Contributions](#financial-contributions)
     - [Mobile Money Contributions](#mobile-money-contributions)
@@ -163,6 +164,23 @@ ugandaDataLib.fetchDistricts()
 | `async fetchVillage(uuid)`           | Fetches a village from the API based on the given UUID.  | `uuid` (string)                                    | `Promise<any>`    |
 
 
+# Contributing to UGANDA DATA LIB
+
+Thank you for considering contributing to UGANDA DATA LIB! Contributions are welcome from everyone.
+
+## How to Contribute
+
+1. Fork the repository on GitHub.
+2. Clone your forked repository to your local machine.
+
+   ```bash
+   git clone https://github.com/your-username/uganda-data-lib.git
+   cd uganda-data-lib
+   git checkout -b feature-name
+   git commit -m "Your descriptive commit message"
+   git push origin feature-name
+```
+
 # Support Me
 
 If you find this project helpful and would like to support its development, you have a few options:
@@ -188,6 +206,6 @@ For more about me and my projects, you can visit my [website](https://resume-eta
 
 ## Hire Me
 
-If you're looking for a developer with expertise in this project, I'm available for hire. Feel free to [contact me](mailto:katznicho@gmail.com) for more information.
+If you're looking for a developer with expertise , I'm available for hire. Feel free to [contact me](mailto:katznicho@gmail.com) for more information.
 
 Thank you for supporting this project!
