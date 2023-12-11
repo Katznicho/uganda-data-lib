@@ -1,6 +1,6 @@
 # UGANDA DATA LIB
 - Welcome to the Uganda Data Project documentation. This guide will help you get started with accessing data related to districts, counties, sub-counties, parishes, and villages in Uganda through the Uganda Data Project API.
-{{% /pageinfo %}}
+
 
 ## Prerequisites
 
