@@ -1,6 +1,6 @@
 {
   "name": "uganda-data-lib",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "A JavaScript library that Unlocks boundless opportunities for accessing data about districts, counties, sub-counties, parishes, and villages in Uganda.",
   "main": "index.js",
   "scripts": {
