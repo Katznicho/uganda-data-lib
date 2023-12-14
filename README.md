@@ -100,6 +100,12 @@ To install the library, use npm:
 npm install uganda-data-lib
 
 ```
+or use yarn
+
+```bash
+yarn add uganda-data-lib
+
+```
 
 ## Usage 
 ```js
