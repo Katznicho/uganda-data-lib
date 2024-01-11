@@ -7,7 +7,7 @@ class UgandaData {
      * @param {string} apiKey - The API key to be used for authentication.
      */
     constructor(apiKey) {
-        this.baseurl = "https://uganda.rapharm.shop/api/uganda/data/v1";
+        this.baseurl = "https://uganda.risidev.com/api/uganda/data/v1";
         this.apiKey = apiKey;
         this.headers = {
             'X-API-KEY': this.apiKey,
@@ -68,7 +68,7 @@ class UgandaData {
         const url = `${this.baseurl}/district/${uuid}`;
         return this.fetchData(url);
     }
-    
+
 
     /**
      * Fetches a county from the API based on the given UUID of a district.
@@ -135,7 +135,7 @@ class UgandaData {
         return this.fetchData(url);
     }
 
-   ///county/{uuid}/subcounties
+    ///county/{uuid}/subcounties
 
     /**
      * Fetches a sub-county from the API based on the given UUID of a county.
